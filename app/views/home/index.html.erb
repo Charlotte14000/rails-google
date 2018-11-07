@@ -3,7 +3,7 @@
     <head>
          <meta charset="utf-8"/>
          <link rel="stylesheet" href="page_google.css"/>
-         <link rel="icon" type="image/png" href="favicons.png" />
+         <%= favicon_link_tag asset_path('favicons.png') %>
          <title>Google</title>
     </head>
 
@@ -18,7 +18,7 @@
          </header>
 
         <main>
-            <img class="logo" src="image_google.png" alt="logo google">
+            <%= image_tag 'image_google.png', class: 'logo' %>
             <form class="google">
                 <input type="text" class="formulaire"/>
                 <input type="image" class="img_btn" src="https://img.generation-nt.com/google-micro-logo_0096006401628319.jpg"/> <br>
